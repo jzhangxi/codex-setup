@@ -172,37 +172,7 @@ Cierra y vuelve a abrir VS Code. Abre un chat nuevo de Codex y sigue la [prueba 
 
 ## Angular y .NET 10 en el CMS
 
-La skill de Angular se instala en el proyecto CMS. Los plugins de .NET se instalan por usuario en Codex.
-
-### Instalar la skill de Angular en el CMS
-
-Abre **PowerShell normal** en la raíz del CMS y ejecuta este comando.
-
-```powershell
-npx skills@latest add angular/skills --skill=angular-developer -a codex
-```
-
-Omite `-g` para instalar la skill en el proyecto. Si el instalador ofrece varios métodos de instalación, elige **Copy** para llevar los archivos a TFS como archivos normales.
-
-### Instalar los plugins de .NET en Codex
-
-Ejecuta en **PowerShell normal** con tu cuenta habitual.
-
-```powershell
-codex plugin marketplace add dotnet/skills
-codex
-```
-
-Dentro de Codex, abre `/plugins` y entra en `dotnet-agent-skills`. Instala `dotnet` para C# y compilación, y `dotnet-data` para EF Core y acceso a datos.
-
-### Compartir la configuración del CMS en TFS
-
-- Incluye `.agents/skills/angular-developer/` completa, con `SKILL.md` y los archivos de apoyo. Comprueba que sean archivos reales y que la carpeta no sea un enlace a tu perfil de usuario.
-- Incluye `skills-lock.json` si el instalador lo generó para el proyecto.
-- Añade `AGENTS.md` cuando estén listas las convenciones del CMS.
-- Añade `README.md` si has documentado cómo instalar `dotnet` y `dotnet-data` para tus compañeros.
-
-Si por ahora solo has instalado la skill de Angular, sube su carpeta y `skills-lock.json` si existe. Cada persona instala los plugins de .NET en su cuenta de Codex.
+Sigue las guías independientes de [Angular](angular.md) y [.NET 10](dotnet.md). La skill de Angular se instala en el proyecto CMS. Los plugins de .NET se instalan por usuario en Codex.
 
 ## Fuentes oficiales
 

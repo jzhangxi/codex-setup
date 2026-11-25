@@ -18,7 +18,7 @@ cd codex-setup
 
 La guía incluye [plugins opcionales](windows/instalacion.md#plugins-opcionales). Context7 consulta documentación técnica, Superpowers aporta skills para trabajar en cambios de software y Context Mode v2 reduce la salida de herramientas que llega al modelo. Los tres tienen sus propias [pruebas en VS Code](windows/diagnostico.md#plugins-opcionales).
 
-Para el CMS del trabajo, sigue la [configuración de Angular y .NET 10](windows/instalacion.md#angular-y-net-10-en-el-cms).
+Para el CMS del trabajo, consulta las guías independientes de [Angular](windows/angular.md) y [.NET 10](windows/dotnet.md).
 
 ## Versiones y archivos locales
 
