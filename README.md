@@ -16,7 +16,9 @@ cd codex-setup
 1. Sigue la [guía de instalación en Windows](windows/instalacion.md) para configurar las instrucciones globales, las skills y RTK.
 2. Realiza las [comprobaciones de RTK en VS Code](windows/diagnostico.md) en cada PC.
 
-La guía incluye [dos plugins opcionales](windows/instalacion.md#plugins-opcionales). Context7 consulta documentación técnica y Superpowers aporta skills para trabajar en cambios de software.
+La guía incluye [plugins opcionales](windows/instalacion.md#plugins-opcionales). Context7 consulta documentación técnica, Superpowers aporta skills para trabajar en cambios de software y Context Mode v2 reduce la salida de herramientas que llega al modelo. Los tres tienen sus propias [pruebas en VS Code](windows/diagnostico.md#plugins-opcionales).
+
+Para el CMS del trabajo, sigue la [configuración de Angular y .NET 10](windows/instalacion.md#angular-y-net-10-en-el-cms).
 
 ## Versiones y archivos locales
 

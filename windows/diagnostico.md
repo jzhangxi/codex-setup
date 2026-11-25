@@ -40,7 +40,7 @@ Si quieres consultar estadísticas, ejecuta `rtk gain` en PowerShell normal. Es 
 
 ## Plugins opcionales
 
-Las pruebas de esta sección quedan pendientes hasta que las confirmes en Codex de VS Code.
+Las pruebas de Context7 y Superpowers quedan pendientes hasta que las confirmes en Codex de VS Code.
 
 ### Context7
 
@@ -66,3 +66,25 @@ Busca en la actividad del chat que se haya cargado una skill de Superpowers, por
 #### Activación explícita
 
 Si la activación automática queda sin confirmar, abre otro chat en `codex-setup`. Busca `brainstorming` en el selector de skills, selecciónala y repite la petición. Comprueba en la actividad que se haya cargado la skill de Superpowers y registra este resultado por separado.
+
+### Context Mode v2
+
+**Prueba completada en Codex de VS Code.** Después de [instalar Context Mode](instalacion.md#context-mode-v2), puedes repetirla en un chat nuevo, sin un log real. Envía esta petición.
+
+> Usa `ctx_execute` con JavaScript para generar en memoria un log simulado de 10.000 líneas de compilación. Inserta `ERROR TS2322: Type 'string' is not assignable to type 'number'` en la línea 7000. Emite el log como salida de `ctx_execute` para localizar el primer error de compilación. Muéstrame el error y una línea antes y después. Luego llama a `ctx_stats` y muestra el informe. No crees archivos.
+
+**Resultado verificado**.
+
+- Recuperó el error `TS2322` en la línea 7000 y las líneas 6999 y 7001.
+- La sesión completa, con 10 llamadas, produjo 363.194 bytes. Llegaron al modelo 13.385 bytes y quedaron fuera 349.809 bytes (96,3 %).
+- El informe registró 1 fuente indexada, 88 fragmentos y 2 búsquedas.
+
+El 96,3 % se refiere a los bytes de esta sesión con un log simulado. Cualquier equivalencia en tokens es una estimación del plugin. Puedes consultar el informe con `$ctx-stats` en el mismo chat.
+
+Si al terminar la instalación aparece `hook-seen: not seen yet`, haz una llamada real desde Codex y vuelve a comprobar ese indicador.
+
+#### Convivencia con RTK
+
+Pide al agente que ejecute `git status --short --branch` en un repositorio Git. Si devuelve su estado, Git funcionó. Para confirmar también RTK, comprueba en la actividad que el hook reescribió la llamada como `rtk git status --short --branch`.
+
+**Última prueba**. Vimos el estado del repositorio. La reescritura por RTK quedó pendiente de confirmar.
