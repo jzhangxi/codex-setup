@@ -24,6 +24,7 @@ cd codex-setup
 - [Desarrollo frontend y Angular](windows/frontend.md)
 - [.NET 10](windows/dotnet.md)
 - [Documentación técnica con Context7](windows/documentacion-tecnica.md)
+- [Exploración de código con GitNexus](windows/exploracion-codigo.md)
 - [Calidad y mantenimiento](windows/calidad.md)
 - [Ahorro de contexto y respuestas](windows/ahorro-contexto.md)
 
