@@ -26,6 +26,12 @@ npx skills@latest list -g -a codex
 
 **Lo que observamos.** El listado inicial mostró `grill-me`, `grilling` y `find-skills` con sus orígenes. Probamos `$grill-me` en Codex de VS Code y funcionó. De `find-skills` solo comprobamos su presencia en el listado.
 
+## Skills de Matt Pocock pendientes de investigar
+
+- `handoff`. Probar si su resumen permite retomar una tarea en otro chat de Codex con las decisiones, los archivos y los pasos pendientes. [Ficha de handoff](https://skills.sh/mattpocock/skills/handoff)
+- `retro`. Probar si una retrospectiva de una sesión difícil detecta mejoras concretas en las instrucciones, las comprobaciones o el uso de herramientas. Usa [`writing-for-agents`](https://skills.sh/mattpocock/skills/writing-for-agents). [Ficha de retro](https://skills.sh/mattpocock/skills/retro)
+- `to-tickets`. Probar si divide un plan del CMS en tareas verificables y ordenadas por dependencias. Empezar con archivos locales y configurar el repositorio con [`setup-matt-pocock-skills`](https://skills.sh/mattpocock/skills/setup-matt-pocock-skills). [Ficha de to-tickets](https://skills.sh/mattpocock/skills/to-tickets)
+
 ## Fuentes oficiales
 
 - [CLI de skills de Vercel](https://github.com/vercel-labs/skills)
