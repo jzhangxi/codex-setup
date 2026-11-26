@@ -18,7 +18,7 @@ npx skills@latest add vercel-labs/skills --skill find-skills -a codex -g
 
 ## Comprobar las skills instaladas
 
-En **PowerShell normal**, comprueba que las skills que elegiste aparecen en el listado global de Codex con sus orígenes. Si instalaste todas las skills de estas guías con `skills@latest` y `-g`, deben aparecer diez.
+En **PowerShell normal**, comprueba que las skills que elegiste aparecen en el listado global de Codex con sus orígenes.
 
 ```powershell
 npx skills@latest list -g -a codex

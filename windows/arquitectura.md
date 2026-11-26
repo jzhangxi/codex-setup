@@ -48,6 +48,23 @@ npx skills@latest add mattpocock/skills --skill=diagnosing-bugs --skill=grill-wi
 
 Comprueba las skills en el [listado global de Codex](general.md#comprobar-las-skills-instaladas).
 
+## Mejorar la arquitectura de código existente
+
+- `improve-codebase-architecture` revisa un área del código y propone refactorizaciones para reducir el acoplamiento y facilitar las pruebas. Presenta las propuestas en un informe HTML temporal.
+- `codebase-design` ayuda a diseñar la interfaz de un módulo y a comparar alternativas. La revisión de arquitectura usa esta skill para evaluar sus propuestas.
+
+Instala ambas para tu usuario de Codex desde **PowerShell normal**.
+
+```powershell
+npx skills@latest add mattpocock/skills --skill improve-codebase-architecture --skill codebase-design -a codex -g
+```
+
+Comprueba ambas en el [listado global de Codex](general.md#comprobar-las-skills-instaladas). Abre un chat nuevo de Codex en VS Code en un repositorio con código y pide una revisión de un módulo concreto con `$improve-codebase-architecture`. Para una primera prueba, pide solo el informe. Si eliges una propuesta para discutirla, la skill puede actualizar `GLOSSARY.md` o plantear un registro de decisión.
+
+Puedes usar [GitNexus](exploracion-codigo.md) para seguir las llamadas y dependencias del área que quieras revisar. Para configurar el gestor de tickets y la ubicación de los documentos del dominio, consulta la [configuración por repositorio de Matt Pocock](https://github.com/mattpocock/skills#2-run-setup-matt-pocock-skills).
+
+[Guía de revisión de arquitectura de Matt Pocock](https://github.com/mattpocock/skills/blob/main/docs/engineering/improve-codebase-architecture.md)
+
 ## Fuentes oficiales
 
 - [Repositorio de skills de Matt Pocock](https://github.com/mattpocock/skills)
