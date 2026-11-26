@@ -11,16 +11,24 @@ git clone https://github.com/jzhangxi/codex-setup.git
 cd codex-setup
 ```
 
-## Instalar y verificar
+## Configurar un PC nuevo
 
-1. Sigue la [guía de instalación en Windows](windows/instalacion.md) para configurar las instrucciones globales, las skills y RTK.
-2. Realiza las [comprobaciones de RTK en VS Code](windows/diagnostico.md) en cada PC.
+1. Aplica la [configuración general](windows/general.md) en la app de Codex y comprueba los requisitos comunes.
+2. [Instala y verifica RTK](windows/ahorro-contexto.md#rtk) en ese PC.
+3. Elige los recursos que necesites en el índice. Cada guía indica el método y el ámbito de instalación y cómo comprobar el resultado en VS Code.
 
-La guía incluye [plugins opcionales](windows/instalacion.md#plugins-opcionales). Context7 consulta documentación técnica, Superpowers aporta skills para trabajar en cambios de software y Context Mode v2 reduce la salida de herramientas que llega al modelo. Los tres tienen sus propias [pruebas en VS Code](windows/diagnostico.md#plugins-opcionales).
+## Guías por dominio
 
-Para el CMS del trabajo, consulta las guías independientes de [Angular](windows/angular.md) y [.NET 10](windows/dotnet.md).
+- [Configuración general](windows/general.md)
+- [Arquitectura y planificación](windows/arquitectura.md)
+- [Desarrollo frontend y Angular](windows/frontend.md)
+- [.NET 10](windows/dotnet.md)
+- [Documentación técnica con Context7](windows/documentacion-tecnica.md)
+- [Calidad y mantenimiento](windows/calidad.md)
+- [Ahorro de contexto y respuestas](windows/ahorro-contexto.md)
 
 ## Versiones y archivos locales
+
 
 El repositorio guarda las instrucciones, los comandos y el script. Los binarios, las credenciales, el historial y la configuración local generada, como `hooks.json`, quedan fuera del repositorio.
 

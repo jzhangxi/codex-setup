@@ -17,6 +17,8 @@ codex plugin add dotnet-nuget@dotnet-agent-skills
 - `dotnet-diag` ayuda a diagnosticar fallos y rendimiento.
 - `dotnet-nuget` cubre la gestión de paquetes y dependencias.
 
-Abre un chat nuevo de Codex en VS Code para cargar los plugins. Puedes añadir los pasos al `README.md` del CMS y compartirlo en TFS con tus compañeros.
+Abre un chat nuevo de Codex en VS Code para cargar los plugins. Comprueba que aparecen skills de .NET en el selector del chat. Puedes añadir los pasos al `README.md` del CMS y compartirlo en TFS con tus compañeros.
+
+Para consultar documentación técnica de las bibliotecas del proyecto, usa [Context7](documentacion-tecnica.md).
 
 [Fuente oficial de skills y plugins de .NET](https://github.com/dotnet/skills/)
