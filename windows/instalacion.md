@@ -52,9 +52,19 @@ npx skills@latest add addyosmani/agent-skills --skill=code-review-and-quality -a
 npx skills@latest add DietrichGebert/ponytail --skill=ponytail -a codex -g
 ```
 
+### Maquetar y revisar interfaces web
+
+- [frontend-design de Anthropic](https://github.com/anthropics/skills/tree/main/skills/frontend-design) guía el diseño y la implementación de páginas y componentes web, con atención a la composición, la tipografía y el estilo visual.
+- [web-design-guidelines de Vercel](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines) revisa interfaces web según las pautas de Vercel sobre diseño, accesibilidad y experiencia de usuario.
+
+```powershell
+npx skills@latest add anthropics/skills --skill=frontend-design -a codex -g
+npx skills@latest add vercel-labs/agent-skills --skill=web-design-guidelines -a codex -g
+```
+
 ### Comprobar las skills instaladas
 
-Comprueba que las ocho skills aparecen en el listado global de Codex con sus orígenes.
+Comprueba que las diez skills aparecen en el listado global de Codex con sus orígenes.
 
 ```powershell
 npx skills@latest list -g -a codex
